@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "AbiNairs addblock",
+    "description": "This extension blocks ads on websites to improve user experience.",
+    "version": "1.0",
+    "permissions": ["webRequest", "webRequestBlocking", "*://*/*"],
+    "icons": {
+        "128": "icons/deadpool.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "128": "icons/logo_128x128.png"
+        }
+    },
+    "background": {
+        "scripts": ["block.js", "background.js"]
+    }
+}
